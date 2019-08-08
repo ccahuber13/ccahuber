@@ -1,1 +1,1 @@
-console.log('Imported module!');
+console.log('test');

@@ -3,4 +3,8 @@ import './test'
 import '../styles/scss/appStyles.scss'
 import '../styles/css/main.css'
 
-console.log(`Imported ${x} from another module`);
+console.log(`index.js running`);
+
+import testFunction from "./smooth-page-transitions"
+
+testFunction();
