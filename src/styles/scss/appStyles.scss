@@ -1,30 +1,59 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$themeColor-whiteTxt:#004176;
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 h1{
     color: $themeColor-whiteTxt;
 }
 
-.nav-list {
-    height: 10vh;
-    display:flex;
-    width: 50%;
+nav {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-left:auto;
-    list-style: none;
+    min-height: 10vh;
+
+    ul {
+        height: 10vh;
+        display:flex;
+        width: 40%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left:auto;
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color:black;
+        font-size: 18px;
+    }
+
+    .logo {
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        font-size:2rem;
+    }
+
+    .mobile-menu-icon div {
+        width: 25px;
+        height: 5px;
+        background-color: black;
+        margin:5px;
+    }
 }
 
-.nav-links {
-    text-decoration: none;
-    color:black;
-    font-size: 18px;
-}
+
 
 .home, 
 .about {

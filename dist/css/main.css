@@ -1,3 +1,6 @@
+h4 {
+  color: red; }
+
 * {
   margin: 0;
   padding: 0;
@@ -6,21 +9,26 @@
 h1 {
   color: #004176; }
 
-.nav-list {
-  height: 10vh;
+nav {
   display: flex;
-  width: 50%;
   justify-content: space-around;
   align-items: center;
-  margin-left: auto;
-  list-style: none; }
+  min-height: 10vh; }
+  nav ul {
+    height: 10vh;
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    list-style: none; }
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px; }
 
-.nav-links {
-  text-decoration: none;
-  color: black;
-  font-size: 18px; }
-
-.home {
+.home,
+.about {
   height: 90vh;
   position: absolute;
   width: 100%; }
@@ -28,17 +36,24 @@ h1 {
 .home {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); }
 
-.home-content {
+.about {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); }
+
+.home-content,
+.about-content {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
-  .home-content img {
+  .home-content img,
+  .about-content img {
     height: 70%; }
-  .home-content h1 {
+  .home-content h1,
+  .about-content h1 {
     font-size: 50px;
     margin: 30px 0px; }
-  .home-content p {
+  .home-content p,
+  .about-content p {
     font-size: 20px; }
 
 body {
