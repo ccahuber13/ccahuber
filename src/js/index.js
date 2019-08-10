@@ -16,3 +16,15 @@ const H = new Highway.Core({
     }
 });
 
+const navSlide = () => {
+    const mobileIcon = document.querySelector('.main-nav__mobile-icon');
+    const navLinks = document.querySelector('.main-nav__links');
+    console.log(mobileIcon);
+    console.log(navLinks);
+
+    mobileIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('.main-nav__links--active');
+    })
+}
+
+navSlide();
